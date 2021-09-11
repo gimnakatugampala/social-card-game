@@ -11,19 +11,21 @@ body {
 }
 
 .memory-game {
-  width: 640px;
-  height: 640px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px;
-  margin-top: 90px;
+  width: 90vw;
+  height: 90vh;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .memory-card {
   width: calc(25% - 10px);
   height: calc(33.333% - 10px);
-  margin: 5px;
+  height: 9rem;
+	width: 9rem;
+	margin: 0.2rem 0.2rem;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
