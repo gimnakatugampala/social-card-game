@@ -11,19 +11,21 @@ body {
 }
 
 .memory-game {
-  width: 640px;
-  height: 640px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px;
-  margin-top: 90px;
+  width: 90vw;
+  height: 90vh;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .memory-card {
   width: calc(25% - 10px);
   height: calc(33.333% - 10px);
-  margin: 5px;
+  height: 9rem;
+	width: 9rem;
+	margin: 0.2rem 0.2rem;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
@@ -53,4 +55,33 @@ body {
 
 .front-face {
   transform: rotateY(180deg);
+}
+
+/* Winning Screen */
+.win-screen {
+  display: none;
+  margin: auto;
+  width: 30vw;
+  height: 60vh;
+  background-color: #eee;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Helvetica Neue', Arial, sans-serif;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.win-screen h1 {
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+
+.win-screen a {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  border: 3px solid #060ab2;
+  background-color: rgba(28, 125, 204, 0.575);
 }
